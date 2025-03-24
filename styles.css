@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffb33a, #f1a831, #ec7f2d); 
+    color: #333;
+}
+
+header {
+    background: url('book.webp') no-repeat center center/cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #00796b; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #ffeb3b; 
+    color: #ffeb3b;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 80px; 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+section {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #d32f2f; 
+    border-bottom: 3px solid #d32f2f;
+    padding-bottom: 10px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    background: #ff5722; 
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #e64a19; 
+    transform: scale(1.05);
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    border: 2px solid #009688; 
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+input:focus, select:focus {
+    border-color: #00796b; 
+    outline: none;
+}
+
+button[type="submit"] {
+    background: #4caf50; 
+}
+
+button[type="submit"]:hover {
+    background: #388e3c; 
+}
+
+.results-list {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin: 0;
+}
+
+.results-list li {
+    background: #f1f8e9; 
+    border: 1px solid #c8e6c9; 
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background 0.3s, box-shadow 0.3s;
+    position: relative; 
+}
+
+footer {
+    background: #00796b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1em;
+}
